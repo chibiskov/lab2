@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <script>
+  // Решение через цикл
+function sumTo1(n) {
+  var sum = 0;
+  for (var i = 1; i <= n; i++) {
+    sum += i;
+  }
+  return sum;
+}
+alert( sumTo1(100) );
+// Решение через рекурсию
+
+ function sumTo2(n) {
+  if (n == 1) return 1;
+  return n + sumTo2(n - 1);
+}
+alert( sumTo2(100) );
+// Решение по формуле 
+
+ function sumTo3(n) {
+  return n * (n + 1) / 2;
+}
+alert( sumTo3(100) );
+  </script>
+</body>
+</html>
